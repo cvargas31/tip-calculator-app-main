@@ -93,6 +93,12 @@ label {
   padding-bottom: 1rem;
 }
 
+#bill{
+  background-image: url(./images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px ;
+}
 
 .bill {
   margin-bottom: 2.5rem;
@@ -128,16 +134,11 @@ input[type=button].active {
   color: var(--dark-grayish-cyan);
 }
 
-.bill > img {
-  position: absolute;
-  left: 300px;
-  bottom: 580px;
-}
-
-.people > img {
-  position: absolute;
-  left: 300px;
-  bottom: 278px;
+#people{
+  background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px ;
 }
 
 .calculator-container__right {
