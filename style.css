@@ -1,4 +1,4 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; color: white; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* Fonts */
@@ -10,10 +10,11 @@
   --strong-cyan: hsl(172, 67%, 45%);
   --very-dark-cyan: hsl(183, 100%, 15%);
   --dark-grayish-cyan: hsl(186, 14%, 43%);
-  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-grayish-cyan: hsl(216, 100%, 4%);
   --light-grayish-cyan-inputs: hsl(189, 41%, 97%);
   --white: #fff;
 }
+
 
 /* Global Style */
 
