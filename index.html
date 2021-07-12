@@ -1,62 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Tip calculator app</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <img src="./images/logo.svg" alt="" srcset="">
-  </header>
-  <main>
-    <div class="calculator-container">
-      <div class="calculator-container__left">
-        <div class="bill">
-          <label for="bill">Bill</label><br>
-          <!-- <img src="./images/icon-dollar.svg" alt="" srcset=""> -->
-          <input type="number" id="bill" value="142.55">
-        </div>
-        <div class="tip">
-        <label for="tip">Select Tip %</label><br>
-        <div class="tip__inputs">
-          <input type="button" value="5%">
-          <input type="button" value="10%">
-          <input type="button" value="15%" class="active">
-          <input type="button" value="25%">
-          <input type="button" value="50%">
-          <input type="button" value="Custom">
-        </div>
-        </div>
-        <div class="people">
-          <label for="people">Number of People</label><br>
-          <!-- <img src="./images/icon-person.svg" alt="" srcset=""> -->
-          <input type="number" id="people" value="5">
-        </div>
-      </div>
-      <div class="calculator-container__right">
-        <div class="number-container">
-          <div class="amount">
-            <p>Tip Amount <span> <br> / person</span></p>
-            <h1 class="tip-amount">$4.27</h1>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="" srcset="" />
+    </header>
+    <main>
+      <form id="form">
+        <div class="calculator-container">
+          <div class="calculator-container__left">
+            <div class="bill">
+              <label for="bill">Bill</label><br />
+              <input type="number" id="bill" value="0" />
+            </div>
+            <div class="tip">
+              <label for="tip">Select Tip %</label><br />
+              <div class="tip__inputs">
+                <input
+                  type="button"
+                  onclick="calculateTip(0.05)"
+                  class="tip-btn"
+                  value="5"
+                />
+                <input
+                  type="button"
+                  onclick="calculateTip(0.10)"
+                  class="tip-btn"
+                  value="10"
+                />
+                <input
+                  type="button"
+                  onclick="calculateTip(0.15)"
+                  class="tip-btn active"
+                  value="15"
+                />
+                <input
+                  type="button"
+                  onclick="calculateTip(0.25)"
+                  class="tip-btn"
+                  value="25"
+                />
+                <input
+                  type="button"
+                  onclick="calculateTip(0.50)"
+                  class="tip-btn"
+                  value="50"
+                />
+                <input type="button" class="tip-btn" value="Custom" />
+              </div>
+            </div>
+            <div class="people">
+              <label for="people">Number of People</label><br />
+              <input type="number" id="people" value="1" />
+            </div>
           </div>
-          <div class="amount">
-            <p>Total <span> <br>/ person</span></p>
-            <h1 class="total-amount">$32.79</h1>
+          <div class="calculator-container__right">
+            <div class="number-container">
+              <div class="amount">
+                <p>
+                  Tip Amount
+                  <span>
+                    <br />
+                    / person</span
+                  >
+                </p>
+                <h1 class="tip-amount">$0.00</h1>
+              </div>
+              <div class="amount">
+                <p>
+                  Total <span> <br />/ person</span>
+                </p>
+                <h1 class="total-amount">$0.00</h1>
+              </div>
+              <button class="btn-reset" onclick="reset()">Reset</button>
+              <!-- <input type="reset" class="btn-reset" onclick="reset()"/> -->
+            </div>
           </div>
-          <button class="btn-reset">Reset</button>
         </div>
-      </div>
+      </form>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Cristhian Vargas</a>.
     </div>
-  </main>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Cristhian Vargas</a>.
-  </div>
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
