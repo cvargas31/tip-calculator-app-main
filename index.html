@@ -26,6 +26,10 @@
               <label for="bill">Bill</label><br />
               <input type="number" id="bill" value="0" />
             </div>
+            <div class="people">
+              <label for="people">Number of People</label><br />
+              <input type="number" id="people" value="1"/>
+            </div>
             <div class="tip">
               <label for="tip">Select Tip %</label><br />
               <div class="tip__inputs">
@@ -33,38 +37,34 @@
                   type="button"
                   onclick="calculateTip(0.05)"
                   class="tip-btn"
-                  value="5"
+                  value="5%"
                 />
                 <input
                   type="button"
                   onclick="calculateTip(0.10)"
                   class="tip-btn"
-                  value="10"
+                  value="10%"
                 />
                 <input
                   type="button"
                   onclick="calculateTip(0.15)"
-                  class="tip-btn active"
-                  value="15"
+                  class="tip-btn"
+                  value="15%"
                 />
                 <input
                   type="button"
                   onclick="calculateTip(0.25)"
                   class="tip-btn"
-                  value="25"
+                  value="25%"
                 />
                 <input
                   type="button"
                   onclick="calculateTip(0.50)"
                   class="tip-btn"
-                  value="50"
+                  value="50%"
                 />
-                <input type="button" class="tip-btn" value="Custom" />
+                <input type="text" disabled onclick="calculateTip()" class="tip-btn custom-btn" placeholder="Custom" />
               </div>
-            </div>
-            <div class="people">
-              <label for="people">Number of People</label><br />
-              <input type="number" id="people" value="1" />
             </div>
           </div>
           <div class="calculator-container__right">

@@ -100,6 +100,10 @@ label {
   background-position-x: 10px ;
 }
 
+#bill:focus{
+  outline: 3px solid var(--strong-cyan);
+}
+
 .bill {
   margin-bottom: 2.5rem;
 }
@@ -128,17 +132,38 @@ input[type=button].active {
   color: var(--very-dark-cyan) ;
 }
 
-.tip__inputs > input[type=button]:last-child {
+/* .tip__inputs > input[type=button]:last-child {
   padding: 14px;
   background-color: var(--light-grayish-cyan-inputs);
   color: var(--dark-grayish-cyan);
+} */
+
+.tip__inputs .custom-btn {
+  border: none;
+  background-color: var(--light-grayish-cyan-inputs);
+  color: var(--dark-grayish-cyan);
+  text-align: center;
+  border-radius: 5px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 150px;
 }
+
+.tip__inputs .custom-btn:focus {
+  outline: 3px solid var(--strong-cyan);
+}
+
 
 #people{
   background-image: url(./images/icon-person.svg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 10px ;
+}
+
+#people:focus{
+  outline: 3px solid var(--strong-cyan);
 }
 
 .calculator-container__right {
