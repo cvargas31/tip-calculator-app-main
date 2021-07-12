@@ -29,18 +29,10 @@ html {
 }
 
 /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  width: 100%;
-  text-align: end;
-  padding-right: 1rem;
-  background-color: var(--light-grayish-cyan-inputs);
-  border: none;
-  padding: 1rem;
-  color: var(--very-dark-cyan);
-  font-size: 1.2rem;
-  font-weight: 700;
+
 }
 
 /* Firefox */
@@ -57,6 +49,7 @@ input[type=number] {
   font-weight: 700;
   margin-top: 0.5rem;
 }
+
 /* Body Background */
 body {
   background-color: var(--light-grayish-cyan);
